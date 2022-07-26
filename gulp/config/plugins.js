@@ -3,6 +3,7 @@ import plumber from "gulp-plumber"; //обработка ошибок
 import notify from "gulp-notify"; //сообщения (подсказки)
 import browsersync from "browser-sync"; //локальный сервис
 import newer from "gulp-newer"; //проверка обнавлений
+import ifPlugin from "gulp-if"; //условное ветвление
 
 //эксортируем объект
 export const plugins = {
@@ -10,5 +11,6 @@ export const plugins = {
     plumber: plumber,
     notify: notify,
     browsersync: browsersync,
-    newer: newer
+    newer: newer,
+    if: ifPlugin
 }

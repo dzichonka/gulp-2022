@@ -35,12 +35,17 @@
 }
 
 .no-webp body {
-  background: url("../img/cover.jpg") 0 0 no-repeat; }
+  background: url("../img/cover.jpg") center center/cover no-repeat; }
 
 body {
   background-color: #000;
   color: yellowgreen;
   font-weight: 700;
+}
+
+body header {
+  font-family: "brioso-pro-italic", sans-serif;
+  color: aqua;
 }
 
 body span {
@@ -58,4 +63,4 @@ body span {
   }
 }
 
-.webp body { background: url(../img/cover.webp) 0 0 no-repeat; }
+.webp body { background: url(../img/cover.webp) center center/cover no-repeat; }
