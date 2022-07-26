@@ -1,7 +1,17 @@
+@import "fonts";
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
 body {
     background-color: #000;
+    color: yellowgreen;
+    font-weight: 700;
+
 
     span {
+        font-family: 'brioso-pro-italic', sans-serif;
         color: aqua;
     }
 

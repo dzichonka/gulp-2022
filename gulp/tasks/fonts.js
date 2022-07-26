@@ -40,7 +40,7 @@ export const ttfToWoff = () => {
 
 export const fontsStyle = () => {
     //файл стилей подключения шрифтов
-    let fontsFile = `${app.path.srcFolder}/scss/fonts.scss`;
+    let fontsFile = `${app.path.srcFolder}/scss/_fonts.scss`;
     //проверяем существуют ли файлы шрифтов
     fs.readdir(app.path.build.fonts, function (err, fontsFiles) {
         if (fontsFiles) {
