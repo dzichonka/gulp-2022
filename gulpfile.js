@@ -31,10 +31,10 @@ import { ftp } from "./gulp/tasks/ftp.js";
 //наблюдатель за изменениями в файлах
 function watcher() {
     gulp.watch(path.watch.files, copy);
-    gulp.watch(path.watch.html, html);
-    gulp.watch(path.watch.scss, scss);
-    gulp.watch(path.watch.js, js);
-    gulp.watch(path.watch.images, images);
+    gulp.watch(path.watch.html, html);//gulp.series(html, ftp)  для обнавления ftp в режиме реального времени html меняем на это
+    gulp.watch(path.watch.scss, scss);//gulp.series(scss, ftp)
+    gulp.watch(path.watch.js, js);//gulp.series(js, ftp)
+    gulp.watch(path.watch.images, images);//gulp.series(images, ftp)
 }
 
 export { svgSprive }
